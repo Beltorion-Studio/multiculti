@@ -1,7 +1,8 @@
 .category-collection-list-w {
  display: grid;
  grid-template-columns: repeat(6, 1fr);
- grid-template-rows: repeat(3, 1fr);
+ grid-template-rows: repeat(3, auto);
+ gap: 20px;
 }
 
 .item1 {
