@@ -144,4 +144,4 @@ function threeCollumns(item) {
  item.style.setProperty('grid-column', 'span 2', 'important')
  item.style.setProperty('aspect-ratio', '1 / 1', 'important')
 }
-arangeGrid()
+arrangeGrid()
