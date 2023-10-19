@@ -1,0 +1,27 @@
+name: Deploy to GitHub Pages
+
+on:
+ push:
+  branches:
+   - main
+
+jobs:
+ deploy:
+  runs-on: ubuntu-latest
+
+  steps:
+   - name: Checkout code
+     uses: actions/checkout@v2
+
+   - name: Copy JS file to GitHub Pages
+     run: |
+     cp main.js ./main.js
+     shell: bash
+
+   - name: Commit and push changes
+     run: |
+      git config --global user.email "info@beltorion.com"
+      git config --global user.name "Viktor Gazsi"
+      git add grid.js
+      git commit -m "Auto-deploy from GitHub Actions"
+      git push
