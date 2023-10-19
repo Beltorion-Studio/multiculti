@@ -1,30 +1,21 @@
 let collectionGrid = document.querySelector('.category-collection-list-w')
 let collectionGridItem = collectionGrid.querySelectorAll('.category-collection-item')
 
-function arangeGrid() {
- if (collectionGridItem.length === 3) {
-  elements3()
+function arrangeGrid() {
+ const gridFunctions = {
+  3: elements3,
+  4: elements4,
+  5: elements5,
+  6: elements6,
+  7: elements7,
+  8: elements8,
+  9: elements9,
+  10: elements10,
  }
- if (collectionGridItem.length === 4) {
-  elements4()
- }
- if (collectionGridItem.length === 5) {
-  elements5()
- }
- if (collectionGridItem.length === 6) {
-  elements6()
- }
- if (collectionGridItem.length === 7) {
-  elements7()
- }
- if (collectionGridItem.length === 8) {
-  elements8()
- }
- if (collectionGridItem.length === 9) {
-  elements9()
- }
- if (collectionGridItem.length === 10) {
-  elements10()
+
+ const length = collectionGridItem.length
+ if (gridFunctions[length]) {
+  gridFunctions[length]()
  }
 }
 
@@ -139,6 +130,7 @@ function elements10() {
   }
  })
 }
+
 function oneCollumn(item) {
  item.style.setProperty('grid-column', 'span 6', 'important')
  item.style.setProperty('aspect-ratio', '3 / 1', 'important')
@@ -152,5 +144,4 @@ function threeCollumns(item) {
  item.style.setProperty('grid-column', 'span 2', 'important')
  item.style.setProperty('aspect-ratio', '1 / 1', 'important')
 }
-
 arangeGrid()
