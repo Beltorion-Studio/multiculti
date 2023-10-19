@@ -21,10 +21,10 @@ function arrangeGrid() {
 
 function elements3() {
  collectionGridItem.forEach((item, index) => {
-  if (index === 0 || index === 1) {
+  if (index === 1 || index === 2) {
    twoCollumns(item)
   }
-  if (index === 2) {
+  if (index === 0) {
    oneCollumn(item)
   }
  })
