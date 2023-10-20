@@ -1,11 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
+ // Initial execution on page load
  if (window.innerWidth > 768) {
-  arrangeGrid()
+  //arrangeGrid()
  }
+
+ window.addEventListener('resize', handleResize)
 })
 
 let collectionGrid = document.querySelector('.category-collection-list-w')
 let collectionGridItem = collectionGrid.querySelectorAll('.category-collection-item')
+
+function handleResize() {
+ if (window.innerWidth <= 768) {
+  removeGridArrangement()
+ }
+}
+
+function removeGridArrangement() {
+ // Code to remove or reset the grid arrangement goes here
+ console.log('Grid arrangement removed.')
+}
 
 function arrangeGrid() {
  const gridFunctions = {
