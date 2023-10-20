@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   arrangeGrid()
  }
 
- window.addEventListener('resize', handleResize)
+ // window.addEventListener('resize', handleResize)
 })
 
 let collectionGrid = document.querySelector('.category-collection-list-w')
