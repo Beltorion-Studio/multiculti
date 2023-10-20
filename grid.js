@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', function () {
+ if (window.innerWidth > 768) {
+  arrangeGrid()
+ }
+})
+
 let collectionGrid = document.querySelector('.category-collection-list-w')
 let collectionGridItem = collectionGrid.querySelectorAll('.category-collection-item')
 
@@ -144,4 +150,3 @@ function threeCollumns(item) {
  item.style.setProperty('grid-column', 'span 2', 'important')
  item.style.setProperty('aspect-ratio', '1 / 1', 'important')
 }
-arrangeGrid()
