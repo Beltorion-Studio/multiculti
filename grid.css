@@ -1,9 +1,6 @@
-/* For desktop screens (width 768px or more) */
-@media (min-width: 768px) {
- .category-collection-list-w {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, auto);
-  gap: 20px;
- }
+.category-collection-list-w {
+ display: grid;
+ grid-template-columns: repeat(6, 1fr);
+ grid-template-rows: repeat(3, auto);
+ gap: 20px;
 }

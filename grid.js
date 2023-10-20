@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
  // Initial execution on page load
  if (window.innerWidth > 768) {
-  arrangeGrid()
  }
 
  // window.addEventListener('resize', handleResize)
@@ -23,7 +22,7 @@ function removeGridArrangement() {
   item.style.setProperty('aspect-ratio', '3 / 2', 'important')
  })
 }
-
+arrangeGrid()
 function arrangeGrid() {
  const gridFunctions = {
   3: elements3,
