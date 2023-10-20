@@ -1,36 +1,9 @@
-.category-collection-list-w {
- display: grid;
- grid-template-columns: repeat(6, 1fr);
- grid-template-rows: repeat(3, auto);
- gap: 20px;
-}
-
-.item1 {
- grid-row: 1 / span 1;
- grid-column: 1 / span 3;
-}
-
-.item2 {
- grid-row: 1 / span 1;
- grid-column: 4 / span 3;
-}
-
-.item3 {
- grid-row: 2 / span 1;
- grid-column: 1 / span 6;
-}
-
-.item4 {
- grid-row: 3 / span 1;
- grid-column: 1 / span 2;
-}
-
-.item5 {
- grid-row: 3 / span 1;
- grid-column: 3 / span 2;
-}
-
-.item6 {
- grid-row: 3 / span 1;
- grid-column: 5 / span 2;
+/* For desktop screens (width 768px or more) */
+@media (min-width: 768px) {
+ .category-collection-list-w {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+ }
 }

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
  // Initial execution on page load
  if (window.innerWidth > 768) {
-  //arrangeGrid()
+  arrangeGrid()
  }
 
  window.addEventListener('resize', handleResize)
@@ -18,7 +18,10 @@ function handleResize() {
 
 function removeGridArrangement() {
  // Code to remove or reset the grid arrangement goes here
- console.log('Grid arrangement removed.')
+ collectionGridItem.forEach((item, index) => {
+  item.style.setProperty('grid-column', 'span 2', 'important')
+  item.style.setProperty('aspect-ratio', '3 / 2', 'important')
+ })
 }
 
 function arrangeGrid() {
