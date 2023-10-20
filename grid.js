@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
  // Initial execution on page load
  if (window.innerWidth > 768) {
-  //arrangeGrid()
+  arrangeGrid()
  }
 
  // window.addEventListener('resize', handleResize)
