@@ -17,7 +17,7 @@ function handleResize() {
 }
 
 function removeGridArrangement() {
- // Code to remove or reset the grid arrangement goes here
+ console.log('remove grid arrangament')
  collectionGridItem.forEach((item, index) => {
   item.style.setProperty('grid-column', 'span 6', 'important')
   item.style.setProperty('aspect-ratio', '3 / 2', 'important')
