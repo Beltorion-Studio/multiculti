@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
  // Initial execution on page load
  if (window.innerWidth > 768) {
+  arrangeGrid()
  }
- arrangeGrid()
 
- window.addEventListener('resize', handleResize)
+ //window.addEventListener('resize', handleResize)
 })
 
 let collectionGrid = document.querySelector('.category-collection-list-w')
