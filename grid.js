@@ -34,6 +34,7 @@ function arrangeGrid() {
   8: elements8,
   9: elements9,
   10: elements10,
+  12: elements12,
  }
 
  const length = collectionGridItem.length
@@ -149,6 +150,26 @@ function elements10() {
    twoCollumns(item)
   }
   if (index === 7 || index === 8 || index === 9) {
+   threeCollumns(item)
+  }
+ })
+}
+
+function elements12() {
+ collectionGridItem.forEach((item, index) => {
+  if (index === 0 || index === 1 || index === 2) {
+   threeCollumns(item)
+  }
+  if (index === 3) {
+   oneCollumn(item)
+  }
+  if (index === 4 || index === 5 || index === 6) {
+   threeCollumns(item)
+  }
+  if (index === 7 || index === 8) {
+   twoCollumns(item)
+  }
+  if (index === 9 || index === 10 || index === 11) {
    threeCollumns(item)
   }
  })
