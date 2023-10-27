@@ -159,16 +159,16 @@ function elements10() {
 
 function elements11() {
  collectionGridItem.forEach((item, index) => {
-  if (index === 0 || index === 1 || index === 2) {
-   threeCollumns(item)
+  if (index === 0 || index === 1) {
+   twoCollumns(item)
   }
-  if (index === 3) {
+  if (index === 2) {
    oneCollumn(item)
   }
-  if (index === 4 || index === 5 || index === 6) {
+  if (index === 3 || index === 4 || index === 5) {
    threeCollumns(item)
   }
-  if (index === 7 || index === 8) {
+  if (index === 6 || index === 7) {
    twoCollumns(item)
   }
   if (index === 8 || index === 9 || index === 10) {
