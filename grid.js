@@ -220,6 +220,55 @@ function elements13() {
  })
 }
 
+function elements14() {
+ collectionGridItem.forEach((item, index) => {
+  if (index === 0 || index === 1) {
+   twoCollumns(item)
+  }
+  if (index === 2) {
+   oneCollumn(item)
+  }
+  if (index === 3 || index === 4 || index === 5) {
+   threeCollumns(item)
+  }
+  if (index === 6 || index === 7) {
+   twoCollumns(item)
+  }
+  if (index === 8 || index === 9 || index === 10) {
+   threeCollumns(item)
+  }
+  if (index === 11 || index === 12) {
+   twoCollumns(item)
+  }
+  if (index === 13) {
+   oneCollumn(item)
+  }
+ })
+}
+
+function elements15() {
+ collectionGridItem.forEach((item, index) => {
+  if (index === 0 || index === 1) {
+   twoCollumns(item)
+  }
+  if (index === 2 || index === 3 || index === 4) {
+   threeCollumns(item)
+  }
+  if (index === 5 || index === 6) {
+   twoCollumns(item)
+  }
+  if (index === 7 || index === 8 || index === 9) {
+   threeCollumns(item)
+  }
+  if (index === 10 || index === 11) {
+   twoCollumns(item)
+  }
+  if (index === 12 || index === 13 || index === 14) {
+   threeCollumns(item)
+  }
+ })
+}
+
 function oneCollumn(item) {
  item.style.setProperty('grid-column', 'span 6', 'important')
  item.style.setProperty('aspect-ratio', '3 / 1', 'important')
