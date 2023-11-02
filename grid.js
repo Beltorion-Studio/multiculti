@@ -34,9 +34,11 @@ function arrangeGrid() {
   8: elements8,
   9: elements9,
   10: elements10,
-  12: elements12,
   11: elements11,
+  12: elements12,
   13: elements13,
+  14: elements14,
+  15: elements15,
  }
 
  const length = collectionGridItem.length
